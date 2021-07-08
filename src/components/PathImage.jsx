@@ -8,11 +8,14 @@ import SavinaImg from '@images/savina.jpg'
 import ScheduleImg from '@images/schedule.svg'
 import CheckedImg from '@images/checked.png'
 import MasterCardImg from '@images/masterCard.png'
+import PaymentSuccessImg from '@images/paymentSuccessBg.png'
+import ArrowRightImg from '@images/arrowRight.png'
 
 export {
     ArrowLeftImg , SuccessImg ,
     EloImg , ArrowDownImg ,
     BagImg , SavinaImg ,
     ScheduleImg , ArrowUpImg,
-    CheckedImg , MasterCardImg
+    CheckedImg , MasterCardImg,
+    PaymentSuccessImg , ArrowRightImg
 }

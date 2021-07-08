@@ -42,9 +42,11 @@ export default class NewCard extends React.Component{
                         <p className="ml-2 txt-bold mb-0">Set as default payment method</p>
                     </div>
 
-                    <ButtonRed className="mt-4">
-                        Save
-                    </ButtonRed>
+                    <Link to="/qpCheckout">
+                        <ButtonRed className="mt-4">
+                            Save
+                        </ButtonRed>
+                    </Link>
                 </div>
             </section>
         )

@@ -1,0 +1,12 @@
+.payment-success-header{
+    background: url('@images/paymentSuccessBg.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.dot{
+    width: 4px !important;
+    height: 4px !important;
+    border-radius: 100px;
+}

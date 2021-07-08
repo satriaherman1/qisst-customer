@@ -2,6 +2,7 @@ import React from 'react';
 import Login from '@components/pages/Login';
 import QpCheckout from '@components/pages/QpCheckout';
 import NewCard from '@components/pages/NewCard';
+import PaymentSuccess from '@components/pages/PaymentSuccess';
 import { BrowserRouter , Link , Switch , Route } from 'react-router-dom';
 import '@css/main.css'
 
@@ -22,6 +23,10 @@ export default class Main extends React.Component{
 
                     <Route path="/newCard">
                         <NewCard />
+                    </Route>
+
+                    <Route path="/payment-success">
+                        <PaymentSuccess />
                     </Route>
 
                 </BrowserRouter>

@@ -98,7 +98,7 @@ export default class QpCheckout extends React.Component{
                             <img src={SavinaImg} width={50} alt="" srcset="" />
 
                             <div className="d-flex flex-column ml-3">
-                                <p className="txt-bold mb-0">
+                                <p className="txt-bold mb-0 text-truncate" style={{ maxWidth : "170px" }}>
                                     Safina Women’s Velvet Sleeping Suit
                                 </p>
                                 <span className="small">
@@ -177,9 +177,11 @@ export default class QpCheckout extends React.Component{
                 </div>
 
                 
-                <ButtonRed className="my-4">
-                    Pay
-                </ButtonRed>
+                <Link to="payment-success">
+                    <ButtonRed className="my-4">
+                        Pay
+                    </ButtonRed>
+                </Link>
                 
             </section>
         )

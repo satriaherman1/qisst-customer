@@ -1,0 +1,11 @@
+.background-blue{
+    background: var(--blueColor);
+}
+
+.background-gray{
+    background: var(--grayColor);
+}
+
+.background-orange{
+    background: var(--orangeColor);
+}

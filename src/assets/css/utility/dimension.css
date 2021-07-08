@@ -3,3 +3,23 @@
     transition: all .3s ease;
     overflow: hidden;
 }
+
+.rounded{
+    border-radius: 12px !important;
+}
+
+.h-fit{
+    height: fit-content !important;
+}
+
+.w-fit{
+    width: fit-content !important;
+}
+
+.h-3{
+    height: 3px;
+}
+
+.w-3{
+    width: 3px;
+}
