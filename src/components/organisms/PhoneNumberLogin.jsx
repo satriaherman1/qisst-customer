@@ -7,12 +7,14 @@ import { connect } from 'react-redux';
 class PhoneNumberLogin extends React.Component{
     constructor(props){
         super(props)
+        
+        this.props.initializeDisabled()
     }
 
     render(){
         return(
-            <section className="my-3">
-                <img src={ArrowLeftImg} alt="" width={25} />
+            <section className={`mt-3 ${this.props.className}`}>
+                <img src={ArrowLeftImg} alt="" width={25} onClick={this.props.hanldeMinus}/>
                 <br />
                 <br />
                 <h3>Login</h3>
@@ -20,7 +22,7 @@ class PhoneNumberLogin extends React.Component{
                 <InputTextSelect label="Phone Number" />
 
                 <br />
-                <ButtonRed className={ this.props.disabled == "true" ? "disabled" : "" } >Submit</ButtonRed>
+                <ButtonRed className={ this.props.disabled == "true" ? "disabled" : "" } onClick={this.props.handlePlus}>Submit</ButtonRed>
 
                 <p className="small mt-3 text-center">Not Have Account?
                     <a href="" className="txt-red mx-1">
@@ -39,4 +41,14 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(PhoneNumberLogin)
+// change disabled to true when page loaded first time
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        initializeDisabled : () => {
+            dispatch({type : 'CHANGE_DISABLED' , value : "true"})
+        }
+    }
+}
+
+export default connect(mapStateToProps , mapDispatchToProps)(PhoneNumberLogin)

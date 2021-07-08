@@ -8,7 +8,7 @@ export default class ButtonRed extends React.Component{
 
     render(){
         return(
-            <button className={`button-red ${this.props.className}`} >{this.props.children}</button>
+            <button className={`button-red ${this.props.className}`} onClick={this.props.onClick}>{this.props.children}</button>
         )
     }
 }

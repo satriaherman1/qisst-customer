@@ -2,6 +2,14 @@
     color: var(--red);
 }
 
+.txt-blue {
+    color: var(--blueColor);
+}
+
 .small{
     font-size: 12px;
+}
+
+.txt-bold{
+    font-weight: bold;
 }

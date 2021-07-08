@@ -8,6 +8,11 @@ import { connect } from 'react-redux';
         super(props)
     }
 
+    handleChange = (event) => {
+        this.props.handleDisabled(event)
+        this.props.handleChangeValue(event)
+    }
+
     render(){
         return(
             <div className="d-flex flex-column">
@@ -19,7 +24,7 @@ import { connect } from 'react-redux';
                         </select>
                     </div>
 
-                    <input type="text" onChange={this.props.handleDisabled} className="input-text-select" name={this.props.name} id={this.props.id} />
+                    <input type="text" onChange={this.handleChange} className="input-text-select" name={this.props.name} id={this.props.id} />
                 </div>
             </div>
         )
@@ -28,7 +33,7 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
     return{
-
+        inputValue : state.input
     }
 }
 
@@ -44,6 +49,13 @@ const mapDispatchToProps = (dispatch) => {
                 disabled = "true"
             }
             dispatch({type : 'CHANGE_DISABLED' , value : disabled})
+        },
+        handleChangeValue : (event) => {
+            let value = event.target.value
+            let name = event.target.name
+            let inputValue = {}
+            inputValue[name] = value
+            dispatch({type : "CHANGE_INPUT_VALUE" , value : inputValue})
         }
     }
 }

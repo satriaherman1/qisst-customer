@@ -1,0 +1,26 @@
+.otp input {
+    width: 60px !important;
+    height: 70px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    background: var(--inputTextBackground);
+    border: none;
+    border-radius: 10px;
+}
+
+.otp input:focus{
+    outline: none;
+}
+
+.otp div{
+    justify-content: space-around; 
+}
+
+@media screen and (min-width : 768px) {
+    .otp div {
+        justify-content:space-around;
+    }
+
+  
+}

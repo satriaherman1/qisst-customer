@@ -3,11 +3,13 @@
     --red : #F14668;
     --textSecondary : #66819F;
     --inputPrependBackground : #AFAFAF;
+    --blueColor : #2F87FF;
 }
 
 body{
     font-family: 'SF Pro Display' , sans-serif !important;
     font-weight: normal;
+    letter-spacing: 1px;
 }
 
 h3{
@@ -17,5 +19,6 @@ h3{
 }
 
 p{
-    line-height: 150%;
+    line-height: 180% !important;
+    font-size: 14px;
 }
