@@ -1,5 +1,6 @@
 import ArrowLeftImg from '@images/arrowLeft.png';
 import SuccessImg from '@images/success.gif';
+import SuccessWhiteImg from '@images/successWhite.gif';
 import EloImg from '@images/elo.png'
 import ArrowDownImg from '@images/arrowDown.png';
 import ArrowUpImg from '@images/arrowUp.png'
@@ -19,5 +20,5 @@ export {
     ScheduleImg , ArrowUpImg,
     CheckedImg , MasterCardImg,
     PaymentSuccessImg , ArrowRightImg ,
-    ThumbUpImg
+    ThumbUpImg , SuccessWhiteImg
 }

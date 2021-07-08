@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonRed from '../atoms/ButtonRed';
-import { SuccessImg } from '@components/PathImage';
+import { SuccessWhiteImg } from '@components/PathImage';
 import { Link } from 'react-router-dom';
 
 export default class SuccessLogin extends React.Component{
@@ -11,7 +11,7 @@ export default class SuccessLogin extends React.Component{
     render(){
         return(
             <section className={` ${this.props.className}`}>
-                <img src={ SuccessImg } width="90%" alt="" className="d-block mx-auto" />
+                <img src={ SuccessWhiteImg } width="90%" alt="" className="d-block mx-auto" />
 
                 <h3 className="my-5 text-center">
                     Successfully Logged In
