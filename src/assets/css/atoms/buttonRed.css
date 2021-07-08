@@ -1,0 +1,12 @@
+.button-red{
+    background: var(--red);
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.disabled{
+    opacity: .3;
+}

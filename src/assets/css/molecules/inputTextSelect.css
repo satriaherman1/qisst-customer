@@ -1,0 +1,37 @@
+
+
+.input-text-select{
+    background:#F7F8FC !important;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    padding: 15px 10px;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+}
+
+.input-text-select:focus{
+    outline: none;
+}
+
+.input-select-prepend{
+    position: relative;
+    z-index: 3;
+    background: var(--inputPrependBackground);
+    padding: 10px 8px;
+    font-size: 14px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.input-select-prepend select{
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.input-select-prepend select:focus{
+    outline: none;
+}
