@@ -6,7 +6,7 @@ import ButtonRed from '@components/atoms/ButtonRed';
 import { ArrowLeftImg } from '@components/PathImage';
 
 
-export default class OtpLogin extends React.Component{
+export default class OtpSignUp extends React.Component{
 
     constructor(props){
         super(props)
@@ -43,7 +43,7 @@ export default class OtpLogin extends React.Component{
                 <h3>We Have Sent You A Text Message</h3>
                 <p className="txt-bold mt-4">
                     Please enter the verification code we just sent to <br />
-                    <a className="txt-blue" >+92 33333333</a>
+                    <a className="txt-blue" >xyz@gmail.com</a>
                 </p>
 
                 <div className="otp my-4">

@@ -33,7 +33,10 @@ h3{
     color: var(--textSecondary);
 }
 
+h3 , h1 , h2 , p{
+    line-height: 160% !important;
+}
+
 p{
-    line-height: 180% !important;
-    font-size: 14px;
+     font-size: 14px;
 }

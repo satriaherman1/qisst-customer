@@ -10,6 +10,7 @@ import CheckedImg from '@images/checked.png'
 import MasterCardImg from '@images/masterCard.png'
 import PaymentSuccessImg from '@images/paymentSuccessBg.png'
 import ArrowRightImg from '@images/arrowRight.png'
+import ThumbUpImg from '@images/thumbUp.gif'
 
 export {
     ArrowLeftImg , SuccessImg ,
@@ -17,5 +18,6 @@ export {
     BagImg , SavinaImg ,
     ScheduleImg , ArrowUpImg,
     CheckedImg , MasterCardImg,
-    PaymentSuccessImg , ArrowRightImg
+    PaymentSuccessImg , ArrowRightImg ,
+    ThumbUpImg
 }

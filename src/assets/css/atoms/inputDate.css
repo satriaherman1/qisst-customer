@@ -1,4 +1,4 @@
-.input-text{
+.input-date{
     background:#F7F8FC !important;
     border: none;
     border-radius: 10px;
@@ -9,6 +9,6 @@
     width: 100%;
 }
 
-.input-text:focus{
+.input-date:focus{
     outline: none;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import "@css/atoms/inputText.css"
+import "@css/atoms/inputDate.css"
 import { connect } from 'react-redux';
 
- class InputText extends React.Component{
+ class InputDate extends React.Component{
 
     constructor(props){
         super(props)
@@ -18,7 +18,7 @@ import { connect } from 'react-redux';
             <div className="d-flex flex-column">
                 <label htmlFor={this.props.id}>{this.props.label}</label>
                 <div className="input-group mt-1 mb-3 ">
-                    <input type="text" onChange={this.handleChange} placeholder={this.props.placeholder} className="input-text" name={this.props.name} id={this.props.id} />
+                    <input type="date" onChange={this.handleChange} placeholder={this.props.placeholder} className="input-date" name={this.props.name} id={this.props.id} />
                 </div>
             </div>
         )
@@ -54,4 +54,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps , mapDispatchToProps)(InputText)
+export default connect(mapStateToProps , mapDispatchToProps)(InputDate)

@@ -1,11 +1,11 @@
 import React from 'react';
-import InputTextSelect from '@components/molecules/InputTextSelect';
+import InputText from '@components/atoms/InputText';
 import ButtonRed from '@components/atoms/ButtonRed';
 import { ArrowLeftImg } from '@components/PathImage';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-class PhoneNumberLogin extends React.Component{
+class EmailSignUp extends React.Component{
     constructor(props){
         super(props)
         
@@ -18,16 +18,19 @@ class PhoneNumberLogin extends React.Component{
                 <img src={ArrowLeftImg} alt="" width={25} onClick={this.props.hanldeMinus}/>
                 <br />
                 <br />
-                <h3>Login</h3>
+                <h3>Sign Up</h3>
+                <p>
+                    Let's Sign Up to dive into the world of choices.
+                </p>
                 <br />
-                <InputTextSelect label="Phone Number" />
+                <InputText label="Email" name="email_sign_up" id="emailSignUp" />
 
                 <br />
                 <ButtonRed className={ this.props.disabled == "true" ? "disabled" : "" } onClick={this.props.handlePlus}>Submit</ButtonRed>
 
-                <p className="small mt-3 text-center">Not Have Account?
-                    <Link to="/sign-up" className="txt-red mx-1">
-                        SignUp
+                <p className="small mt-3 text-center">Already Have Account?
+                    <Link to="/" className="txt-red mx-1">
+                        Login
                     </Link>
                     now
                 </p>
@@ -52,4 +55,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps , mapDispatchToProps)(PhoneNumberLogin)
+export default connect(mapStateToProps , mapDispatchToProps)(EmailSignUp)
