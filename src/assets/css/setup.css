@@ -4,12 +4,25 @@
     --textSecondary : #66819F;
     --inputPrependBackground : #AFAFAF;
     --blueColor : #2F87FF;
+    --blackColor : #2B3044;
+    --colorPrimary : #E72E80;
+    --placeholderColor : #66819F;
+}
+
+::placeholder{
+    color: var(--placeholderColor) ;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body{
     font-family: 'SF Pro Display' , sans-serif !important;
     font-weight: normal;
     letter-spacing: 1px;
+     overflow-x: hidden;
+    
 }
 
 h3{

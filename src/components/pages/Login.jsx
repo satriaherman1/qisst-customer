@@ -32,11 +32,11 @@ export default class Login extends React.Component{
                 {/* <Row>
                     <Col md={6} lg={5} sm={6}>
                          */}
-                         <div className="content-login">
+                       
                             <PhoneNumberLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 1 ? "d-none" : ""}  /> 
                             <OtpLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 2 ? "d-none" : ""} /> 
                             <SuccessLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 3 ? "d-none" : ""} /> 
-                         </div>
+                         
                     {/* </Col>
                 </Row> */}
             </Container>

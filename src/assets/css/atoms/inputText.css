@@ -1,0 +1,14 @@
+.input-text{
+    background:#F7F8FC !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 27px 24px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.input-text:focus{
+    outline: none;
+}

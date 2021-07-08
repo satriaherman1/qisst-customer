@@ -1,0 +1,30 @@
+.payment-card{
+    min-width: 250px ;
+    width: 250px ;
+    height: 145px ;
+    max-height: 145px ;
+    border-radius: 14px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+
+.card-primary{
+    background: linear-gradient(to right , rgba(231, 46, 128, 1) , rgba(254 , 0 , 152 , 0.6) );
+}
+
+.card-blue{
+    background: linear-gradient(to right , rgba(0 , 136 , 254 , 1) , rgba(0 , 136 , 254 , 0.6));
+}
+
+.payment-card .check-img{
+    position: absolute;
+    right: 6%;
+    top: 10%;
+}
+
+.master-card{
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+}

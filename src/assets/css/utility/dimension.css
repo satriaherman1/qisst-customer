@@ -1,0 +1,5 @@
+.h-0{
+    height: 0 !important;
+    transition: all .3s ease;
+    overflow: hidden;
+}

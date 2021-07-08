@@ -6,8 +6,24 @@
     color: var(--blueColor);
 }
 
+.txt-black{
+    color: var(--blackColor);
+}
+
+.txt-primary{
+    color: var(--colorPrimary);
+}
+
+.very-small{
+    font-size: 10px;
+}
+
 .small{
     font-size: 12px;
+}
+
+.txt-normal{
+    font-size: 14px;
 }
 
 .txt-bold{

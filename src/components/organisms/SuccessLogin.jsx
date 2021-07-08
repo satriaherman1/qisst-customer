@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonRed from '../atoms/ButtonRed';
 import { SuccessImg } from '@components/PathImage';
+import { Link } from 'react-router-dom';
 
 export default class SuccessLogin extends React.Component{
     constructor(props){
@@ -15,7 +16,9 @@ export default class SuccessLogin extends React.Component{
                 <h3 className="my-5 text-center">
                     Successfully Logged In
                 </h3>
-                <ButtonRed>Pay Now</ButtonRed>
+                <Link to="/qpCheckout">
+                    <ButtonRed>Pay Now</ButtonRed>
+                </Link>
             </section>
         )
     }
