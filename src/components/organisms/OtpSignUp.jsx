@@ -59,9 +59,7 @@ export default class OtpSignUp extends React.Component{
                     Submit
                 </ButtonRed>
 
-                <p className="text-center mt-4">
-                    <a className="txt-red">Change Phone Number</a>
-                </p>
+                
             </section>
 
         )
