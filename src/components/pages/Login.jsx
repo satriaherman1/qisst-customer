@@ -2,6 +2,8 @@ import React from 'react'
 import PhoneNumberLogin from '@components/organisms/PhoneNumberLogin';
 import { Container , Row , Col } from 'react-bootstrap';
 import OtpLogin from '@components/organisms/OtpLogin';
+import SuccessLogin from '@components/organisms/SuccessLogin';
+import '@css/pages/login.css'
 
 export default class Login extends React.Component{
     constructor(props){
@@ -27,13 +29,16 @@ export default class Login extends React.Component{
     render(){
         return(
             <Container>
-                <Row>
+                {/* <Row>
                     <Col md={6} lg={5} sm={6}>
-                        
-                         <PhoneNumberLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 1 ? "d-none" : ""}  /> 
-                         <OtpLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 2 ? "d-none" : ""} /> 
-                    </Col>
-                </Row>
+                         */}
+                         <div className="content-login">
+                            <PhoneNumberLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 1 ? "d-none" : ""}  /> 
+                            <OtpLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 2 ? "d-none" : ""} /> 
+                            <SuccessLogin handlePlus={this.handlePlusProgress} handleMinus={this.handleMinusProgress} className={ this.state.loginProgress !== 3 ? "d-none" : ""} /> 
+                         </div>
+                    {/* </Col>
+                </Row> */}
             </Container>
         )
     }

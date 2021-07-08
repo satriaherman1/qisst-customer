@@ -55,7 +55,7 @@ export default class OtpLogin extends React.Component{
                     Didn't get the code? <a className="txt-red">Resend a New One</a>
                 </p>
 
-                <ButtonRed className={`${this.state.disabled == "true" ? "disabled" : ""} txt-bold`}>
+                <ButtonRed onClick={this.props.handlePlus} className={`${this.state.disabled == "true" ? "disabled" : ""} txt-bold`}>
                     Submit
                 </ButtonRed>
 
