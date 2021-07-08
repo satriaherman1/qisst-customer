@@ -16,7 +16,7 @@ export default class SuccessSignUp extends React.Component{
                 <h3 className="my-4 text-center">
                     You are all set to begin! 
                 </h3>
-                <Link to="/qpCheckout">
+                <Link to="/newCard">
                     <ButtonRed>Pay Now</ButtonRed>
                 </Link>
             </section>
